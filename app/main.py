@@ -3,7 +3,7 @@ from starlette.middleware.cors import CORSMiddleware
 
 from . import models
 from .database import engine
-from .routers import auth, todos, admin, users, smoke
+from .routers import auth, todos, admin, users, smoke, converter
 from datetime import datetime
 
 app = FastAPI()
@@ -23,6 +23,7 @@ app.include_router(todos.router)
 app.include_router(admin.router)
 app.include_router(users.router)
 app.include_router(smoke.router)
+app.include_router(converter.router)
 
 
 

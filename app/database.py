@@ -7,8 +7,6 @@ from sqlalchemy.ext.declarative import declarative_base
 
 
 # postgresql
-# SQLALCHEMY_DATABASE_URL = "postgresql://postgres:test1234!@localhost/TodoApplicationDatabase"
-# SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://flairmix:M120461mix@PostgresContainer:5432/flairmix"
 SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://flairmix:M120461mix@PostgresContainer:5432/flairmix"
 
 

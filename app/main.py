@@ -26,6 +26,10 @@ app.include_router(smoke.router)
 app.include_router(converter.router)
 
 
+@app.get('/')
+async def read_main():
+    return {"msg" : "Hello World"}
+
 
 @app.get("/day", tags=["Dates"])
 def get_day_of_week():
@@ -40,5 +44,6 @@ def get_day_of_week():
 @app.get("/hello/{name}")
 async def say_hello():
     return {"name": "hello {name}"}
+
 
 

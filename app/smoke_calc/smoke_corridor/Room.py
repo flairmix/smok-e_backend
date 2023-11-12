@@ -131,9 +131,8 @@ class Room():
         ограждающих строительных конструкций, кг/м2
         Приложение 1 МР 2013
         """
-        self.Fw_unit_fire_load_by_walling = (
-                                                    self.room_area_m2 * self.room_fire_load_density) / (
-                                                    (self.Fw - self.A0) * CALORIFIC_VALUE_WOOD)
+        self.Fw_unit_fire_load_by_walling = round((self.room_area_m2 * self.room_fire_load_density) / (
+                                                    (self.Fw - self.A0) * CALORIFIC_VALUE_WOOD), 2)
 
     # def get_calorific_value_fire_load(self, room_calorific_value_fire_load: float):
     #     """
@@ -155,7 +154,7 @@ class Room():
 
         # self.v0_air_for_burn = round((0.263 * i ), 2)
 
-        self.v0_air_for_burn = 0.263 * self.room_calorific_value_fire_load
+        self.v0_air_for_burn = round(0.263 * self.room_calorific_value_fire_load, 2)
 
     def calc_room_opening_rate(self, hight_opening: float) -> None:
         """

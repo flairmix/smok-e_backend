@@ -1,6 +1,7 @@
+from ..smoke_consts import CALORIFIC_VALUE_WOOD
 from .Room import Room
 from .Corridor import Corridor
-from ..smoke_consts import CALORIFIC_VALUE_WOOD
+
 
 
 def corridor_calc_one(room: Room, corridor: Corridor) -> list:

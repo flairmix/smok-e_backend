@@ -19,7 +19,7 @@ class TestRoom(unittest.TestCase):
           
         Corridor_test =  Corridor(
                  corridor_system_name = "Room_System_Name_test",
-                 corridor_leve = 1,
+                 corridor_level = 1,
                  corridor_hight = 3,
                  corridor_door_hight = 2.,
                  corridor_door_width = 1.,
